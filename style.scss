@@ -1,0 +1,259 @@
+$red: #DB332E;
+
+body, html 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 79px;
+    background-color: black;
+    color: #fff;
+
+    .logo {
+        position: absolute;
+        left: 55px;
+        height: 58px;
+        top: 10px;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .right-header {
+        position: absolute;
+        right: 55px;
+        top: 30px;
+        font-size: 1em;
+        letter-spacing: 0.02em;
+        text-align: right;
+        font-style: italic;
+        color: saturate(lighten($red, 20%), 15%);
+    }
+}
+
+#navbar {
+    width: 100%;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #222;
+    }
+
+    .icon {
+        display: inline-block;
+        margin: 20px 4.5%;
+        height: 60px;
+        text-align: center;
+
+        img {
+            cursor: pointer;
+            transition: 0.1s;
+
+            &:hover {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            font-size: 0.82em;
+        }
+    }
+}
+
+#main-container {
+    width: 100%;
+    height: 800px;
+    margin: 60px 0;
+
+    .product-image {
+        float: left;
+        height: 800px;
+        width: 50%;
+        background-image: url('img/livre.jpg');
+        background-size: cover;
+    }
+
+    .product-description {
+        float: left;
+        width: 50%;
+        padding: 0 50px;
+        box-sizing: border-box;
+
+        h2 {
+            color: #333;
+            font-size: 1.85em;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin-top: 30px;
+            border-bottom: 1px #555 solid;
+            color: #333;
+            padding: 15px;
+            font-size: 0.95em;
+        }
+
+        .stock {
+            background-color: lighten($red, 5%);
+            color: white;
+            font-weight: 700;
+            width: 300px;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .more-infos {
+            font-size: 0.9em;
+            color: #444;
+            line-height: 1.8em;
+        }
+
+        .prix {
+            color: #333;
+            padding: 10px;
+            font-size: 1.55em;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .infos-stock {
+            margin-top: 20px;
+            font-size: 0.8em;
+            padding-left: 10px;
+
+            a {
+                color: darken($red, 5%);
+                font-weight: bold;
+            }
+            
+        }
+    }
+}
+
+#discover {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto 200px auto;
+    height: 400px;
+
+    h2 {
+        margin: 60px 0;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .discover-container {
+        width: 100%;
+
+        .produit {
+            float: left;
+            width: 25%;
+            height: 400px;
+            box-sizing: border-box;
+            text-align: center;
+
+            h5 {
+                font-size: 1em;
+                max-width: 240px;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .produit-img {
+                height: 320px;
+                background-image: url('livre.jpg');
+                background-size: cover;
+                width: 90%;
+                max-width: 240px;
+                margin: auto;
+                border-radius: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#footer {
+    width: 100%;
+    height: 130px;
+    border-top: 1px #dfdfdf solid;
+
+    .container {
+        width: 95%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .down-footer {
+        margin-top: 15px;
+        font-size: 0.75em;
+        color: #222;
+        text-align: right;
+        width: 100%;
+    }
+
+    ul.payment-icons {
+        margin: 25px 0;
+
+        li {
+            list-style: none;
+            float: left;
+            margin-right: 5px;
+        }
+    }
+
+    ul.socials {
+        float: right;
+        margin-top: 18px;        
+
+        li {
+            list-style: none;
+            float: left;
+            margin-right: 5px;
+            margin: 0 15px;
+        }
+
+        svg {
+            height: 25px;
+            fill: #333;
+        }
+    }
+}
+
+.cb {
+    clear: both;
+}
+
+.announcement {
+    background-color: $red;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    display: block;
+    padding: 14px 22px;
+    font-size: 1.06667em;
+    font-weight: 700;
+    box-sizing: border-box;
+}
